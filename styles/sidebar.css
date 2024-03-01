@@ -1,0 +1,86 @@
+.sidebar {
+   flex: 0 0 260px;
+   background: var(--sidebarBackground);
+   border-right: 1px solid var(--inputStroke);
+   padding: 16px;
+   display: flex;
+   flex-flow: column nowrap;
+   height: 100%;
+}
+
+.sidebar__header,
+.sidebar__footer {
+   flex: 0 0 45px;
+}
+
+.sidebar__content {
+   flex: 1;
+   padding: 32px 0;
+}
+
+.sidebar .sidebar__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sidebar .sidebar__toggle .btn .icon {
+   height: 14px;
+   width: 14px;
+   display: flex;
+   align-items: center;
+}
+
+.sidebar .sidebar__toggle .btn .icon .gg-menu:before,
+.sidebar .sidebar__toggle .btn .icon .gg-menu:after {
+   width: 100%;
+}
+
+.sidebar .sidebar__item + .sidebar__item {
+   padding-top: 16px;
+}
+
+.sidebar .sidebar__link {
+   display: flex;
+   color: var(--colorText);
+   align-items: center;
+   text-decoration: none;
+   position: relative;
+}
+
+.sidebar .sidebar__link:before {
+   width: 42px;
+   height: 42px;
+   position: absolute;
+   background: var(--colorMenu);
+   top: 0;
+   left: 0;
+   content: '';
+   border-radius: 8px;
+   transition: width 250ms ease-out;
+}
+
+.sidebar .sidebar__link:hover,
+.sidebar .sidebar__link.active {
+   color: #ffffff;
+}
+
+.sidebar .sidebar__link:hover:before,
+.sidebar .sidebar__link.active:before {
+   width: 100%;
+   background-color: var(--colorPrimary);
+}
+
+.sidebar .sidebar__link .icon {
+   width: 42px;
+   height: 42px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 8px;
+}
+
+.sidebar .sidebar__link .text {
+   position: relative;
+   z-index: 1;
+}

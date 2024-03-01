@@ -1,0 +1,103 @@
+.sum {
+   display: flex;
+   padding: 8px 16px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sum .label {
+   color: var(--colorTextLight);
+   font-size: 0.825rem;
+}
+
+.sum .num {
+   font-size: 2rem;
+   font-family: var(--boldFont);
+   line-height: 1.5;
+}
+
+.sum .sum__icon {
+   width: 48px;
+   height: 48px;
+   background: var(--colorMenu);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.assist {
+   padding: 24px 16px;
+   text-align: center;
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+}
+
+.assist .assist__content {
+   padding: 0 8px;
+}
+
+.assist .assist__title {
+   color: #ffffff;
+   font-weight: normal;
+   font-family: var(--mediumFont);
+   font-size: 1.25rem;
+   line-height: 3rem;
+}
+
+.assist .assist__desc {
+   font-size: 0.875rem;
+   color: var(--colorTextLight);
+   line-height: 1.25rem;
+   margin-bottom: 1.5rem;
+}
+
+.assist .assist__image {
+   position: relative;
+   top: 48px;
+   padding: 0 8px;
+   max-width: 300px;
+}
+
+.assist .assist__action .btn {
+   padding: 8px 24px;
+   width: 100%;
+   font-family: var(--mediumFont);
+}
+
+.assist .assist__action .icon {
+   width: 24px;
+   height: 24px;
+   background-image: url('../images/img-whatsapp.svg');
+   background-size: cover;
+}
+
+.assist .assist__image img {
+   max-width: 90%;
+}
+
+@media screen and (max-width: 1280px) {
+   .assist .assist__action .btn {
+      padding: 8px 42px;
+      width: auto;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .assist {
+      flex-flow: row nowrap;
+   }
+
+   .assist .assist__content {
+      text-align: left;
+   }
+
+   .assist .assist__title {
+      line-height: 2rem;
+   }
+
+   .assist .assist__image {
+      top: 0px;
+   }
+}

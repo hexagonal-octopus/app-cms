@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://css.gg/check.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./styles/auth.css" />
+      <title>Pena CMS</title>
+   </head>
+   <body>
+      <div class="auth">
+         <div class="container">
+            <div class="card">
+               <div class="auth__brand">
+                  <picture>
+                     <source type="image/svg+xml" srcset="./images/img-logo.svg" />
+                     <img src="./images/img-logo.png" alt="Pena CMS" />
+                  </picture>
+               </div>
+               <div class="auth__content">
+                  <h2>Sign in to Pena CMS</h2>
+                  <form class="form" action="./dashboard.html">
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" autocomplete="off" placeholder="Insert your Email" />
+                     </div>
+                     <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter password" />
+                     </div>
+                     <div class="form-group">
+                        <label for="rememberMe" class="form-check">
+                           <div class="wrap">
+                              <input type="checkbox" id="rememberMe" name="remember_me" />
+                              <i class="icon gg-check"></i>
+                           </div>
+                           <span class="text">Remember Me</span>
+                        </label>
+                     </div>
+                     <div class="form-group align-center">
+                        <button type="submit" class="btn btn--primary btn--ripple btn--block">Sign In</button>
+                        <a href="./forgot-password.html" class="link-text">Forgot My Password</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="auth__footer">
+               <p>Design &amp; Develop by Cyberprimatama</p>
+               <p>version 2.0</p>
+            </div>
+         </div>
+         <div class="decoration">
+            <picture>
+               <source type="image/svg+xml" srcset="./images/img-left.svg" />
+               <img src="./images/img-left.png" alt="" class="img-left" />
+            </picture>
+            <picture>
+               <source type="image/svg+xml" srcset="./images/img-right.svg" />
+               <img src="./images/img-right.png" alt="" class="img-right" />
+            </picture>
+         </div>
+      </div>
+   </body>
+</html>

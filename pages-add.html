@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://css.gg/css" rel="stylesheet" />
+      <link href="./styles/styles.css" rel="stylesheet" />
+      <link href="./styles/sidebar.css" rel="stylesheet" />
+      <link href="./styles/dashboard.css" rel="stylesheet" />
+      <link href="./styles/component.css" rel="stylesheet" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="base">
+         <div class="sidebar">
+            <div class="sidebar__header">
+               <div class="sidebar__brand">
+                  <picture>
+                     <source type="image/svg+xml" srcset="./images/img-logo.svg" />
+                     <img src="./images/img-logo.png" alt="Pena CMS" />
+                  </picture>
+               </div>
+               <div class="sidebar__toggle">
+                  <button type="button" class="btn btn--inline">
+                     <span class="icon">
+                        <i class="gg-menu"></i>
+                     </span>
+                  </button>
+               </div>
+            </div>
+            <div class="sidebar__content">
+               <div class="sidebar__item">
+                  <a href="./dashboard.html" class="sidebar__link">
+                     <span class="icon"><i class="gg-tikcode"></i></span>
+                     <span class="text">Dashboard</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="./pages.html" class="sidebar__link active">
+                     <span class="icon"><i class="gg-file-document"></i></span>
+                     <span class="text">Pages</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-file"></i></span>
+                     <span class="text">Reports</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-user"></i></span>
+                     <span class="text">Users</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-options"></i></span>
+                     <span class="text">Settings</span>
+                  </a>
+               </div>
+            </div>
+            <div class="sidebar__footer">
+               <div class="dropup">
+                  <div class="button js-dropdown">
+                     <div class="avatar">
+                        <img src="./images/img-avatar.png" alt="Avatar" />
+                     </div>
+                     <div class="content">
+                        <div class="name">Takahiro Moriuchi</div>
+                        <div class="username">takahiro.moriuchi</div>
+                     </div>
+                  </div>
+                  <div class="dropup__wrap">
+                     <div class="dropup__list">
+                        <div class="dropup__item">
+                           <a href="/profile.html" class="dropup__link">Profile</a>
+                        </div>
+                        <div class="dropup__item">
+                           <a href="#" class="dropup__link">Manage User</a>
+                        </div>
+                        <div class="dropup__item">
+                           <a href="#" class="dropup__link">Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content">
+            <div class="content__container">
+               <div class="content__main">
+                  <div class="content__main">
+                     <div class="content__title">
+                        <h1>Add Page</h1>
+                        <div class="breadcrumb">
+                           <div class="breadcrumb__item">
+                              <a href="./pages.html" class="breadcrumb__link">Pages</a>
+                           </div>
+                           <div class="breadcrumb__item">
+                              <span class="text">Add Page</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card__header">
+                           <h4>Page Form</h4>
+                        </div>
+                        <div class="card__content">
+                           <form action="#" class="form form--expand form--inline">
+                              <div class="form-group">
+                                 <label for="" class="form-label">Page Name:</label>
+                                 <input class="form-control" type="text" name="pagename" placeholder="Create Page Title" />
+                              </div>
+                              <div class="form-group">
+                                 <label for="" class="form-label">Slugname:</label>
+                                 <input class="form-control" type="text" name="slugname" placeholder="Create Slugname" />
+                              </div>
+                              <div class="form-group">
+                                 <label for="" class="form-label">Description:</label>
+                                 <textarea class="form-control" type="text" name="description" rows="3" placeholder="Create informative description"></textarea>
+                              </div>
+                              <div class="form-group">
+                                 <div class="form__left"></div>
+                                 <div class="form__right">
+                                    <button type="submit" class="btn btn--secondary">Submit Form</button>
+                                    <button type="button" class="btn btn--link">Reset</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="content__footer">
+                  <p>version 2.0</p>
+                  <p>Design & Developed by Cyberprimatama</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="./scripts/index.js"></script>
+      <script src="./scripts/button.js"></script>
+   </body>
+</html>

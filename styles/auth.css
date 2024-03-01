@@ -1,0 +1,67 @@
+.auth {
+   min-height: 100%;
+   position: relative;
+}
+
+.auth .card {
+   padding: 48px;
+}
+
+.auth__brand {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 16px;
+}
+
+.auth .card {
+   padding: 48px;
+}
+
+.auth .auth__content h2 {
+   text-align: center;
+   line-height: 1;
+   font-size: 1.125rem;
+}
+
+.auth .auth__content .link-text {
+   margin-top: 16px;
+}
+
+.auth .container {
+   width: 480px;
+   padding-top: 48px;
+   margin: 0 auto;
+}
+
+.auth .decoration {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 300px;
+   overflow: hidden;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   z-index: -1;
+}
+
+.auth .img-left {
+   position: relative;
+   bottom: -3px;
+}
+
+.auth .form {
+   padding-top: 32px;
+}
+
+.auth .auth__footer {
+   padding-top: 24px;
+   text-align: center;
+   font-size: 0.825rem;
+}
+
+.auth .auth__footer p {
+   line-height: 1.5;
+}

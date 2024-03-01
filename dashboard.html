@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://css.gg/css" rel="stylesheet" />
+      <link href="./styles/styles.css" rel="stylesheet" />
+      <link href="./styles/sidebar.css" rel="stylesheet" />
+      <link href="./styles/dashboard.css" rel="stylesheet" />
+      <link href="./styles/component.css" rel="stylesheet" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="base">
+         <div class="sidebar">
+            <div class="sidebar__header">
+               <div class="sidebar__brand">
+                  <picture>
+                     <source type="image/svg+xml" srcset="./images/img-logo.svg" />
+                     <img src="./images/img-logo.png" alt="Pena CMS" />
+                  </picture>
+               </div>
+               <div class="sidebar__toggle">
+                  <button type="button" class="btn btn--inline">
+                     <span class="icon">
+                        <i class="gg-menu"></i>
+                     </span>
+                  </button>
+               </div>
+            </div>
+            <div class="sidebar__content">
+               <div class="sidebar__item">
+                  <a href="./dashboard.html" class="sidebar__link active">
+                     <span class="icon"><i class="gg-tikcode"></i></span>
+                     <span class="text">Dashboard</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="./pages.html" class="sidebar__link">
+                     <span class="icon"><i class="gg-file-document"></i></span>
+                     <span class="text">Pages</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-file"></i></span>
+                     <span class="text">Reports</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-user"></i></span>
+                     <span class="text">Users</span>
+                  </a>
+               </div>
+               <div class="sidebar__item">
+                  <a href="#" class="sidebar__link">
+                     <span class="icon"><i class="gg-options"></i></span>
+                     <span class="text">Settings</span>
+                  </a>
+               </div>
+            </div>
+            <div class="sidebar__footer">
+               <div class="dropup">
+                  <div class="button js-dropdown">
+                     <div class="avatar">
+                        <img src="./images/img-avatar.png" alt="Avatar" />
+                     </div>
+                     <div class="content">
+                        <div class="name">Takahiro Moriuchi</div>
+                        <div class="username">takahiro.moriuchi</div>
+                     </div>
+                  </div>
+                  <div class="dropup__wrap">
+                     <div class="dropup__list">
+                        <div class="dropup__item">
+                           <a href="/profile.html" class="dropup__link">Profile</a>
+                        </div>
+                        <div class="dropup__item">
+                           <a href="#" class="dropup__link">Manage User</a>
+                        </div>
+                        <div class="dropup__item">
+                           <a href="#" class="dropup__link">Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content">
+            <div class="content__container">
+               <!-- <h1>Hello I'm Dashboard</h1> -->
+               <div class="content__header">
+                  <div class="left">
+                     <form class="form form--search">
+                        <div class="form__group">
+                           <span class="icon"><i class="gg-search"></i></span>
+                           <input type="text" name="query" class="form-control" placeholder="Search..." />
+                        </div>
+                     </form>
+                     <button type="button" class="btn btn--inline">
+                        <span class="icon">
+                           <i class="gg-bell"></i>
+                        </span>
+                     </button>
+                  </div>
+                  <div class="right">
+                     <a href="#" title="visit website" class="btn btn--secondary btn--ripple">
+                        <span class="icon">
+                           <i class="gg-airplane"></i>
+                        </span>
+                        <span class="text">Visit Website</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="content__main">
+                  <div class="row">
+                     <div class="col">
+                        <h1>Hello I'm Dashboard</h1>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <div class="card">
+                           <div class="sum">
+                              <div class="sum__text">
+                                 <div class="label">Total Pages</div>
+                                 <div class="num">12</div>
+                              </div>
+                              <div class="sum__icon">
+                                 <i class="gg-file-document"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                     <div class="col">
+                        <div class="card">
+                           <div class="sum">
+                              <div class="sum__text">
+                                 <div class="label">Total Slides</div>
+                                 <div class="num">5</div>
+                              </div>
+                              <div class="sum__icon">
+                                 <i class="gg-stories"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                     <div class="col">
+                        <div class="card">
+                           <div class="sum">
+                              <div class="sum__text">
+                                 <div class="label">Total Reports</div>
+                                 <div class="num">12</div>
+                              </div>
+                              <div class="sum__icon">
+                                 <i class="gg-transcript"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                     <div class="col">
+                        <div class="card">
+                           <div class="sum">
+                              <div class="sum__text">
+                                 <div class="label">Total Users</div>
+                                 <div class="num">5</div>
+                              </div>
+                              <div class="sum__icon">
+                                 <i class="gg-user"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                  </div>
+                  <div class="row">
+                     <div class="col col--3of4">
+                        <div class="card">
+                           <div class="card__header">
+                              <h4>Activity</h4>
+                           </div>
+                           <div class="card__content">
+                              <div class="log">
+                                 <div class="log__list">
+                                    <div class="log__item">
+                                       <div class="time">one minutes ago</div>
+                                       <div class="activity">
+                                          <a href="#" class="link-text">Takahiro</a>
+                                          added file
+                                          <a href="#" class="link-text">Laporan Tahunan 2022</a>
+                                          on list Reports.
+                                       </div>
+                                    </div>
+                                    <div class="log__item">
+                                       <div class="time">two months ago</div>
+                                       <div class="activity">
+                                          <a href="#" class="link-text">Takahiro</a>
+                                          posted
+                                          <a href="#" class="link-text">Membangun Semangat Generasi Sandwich</a>
+                                          post in News &amp; Article sections.
+                                       </div>
+                                    </div>
+                                    <div class="log__item">
+                                       <div class="time">two months ago</div>
+                                       <div class="activity">
+                                          <a href="#" class="link-text">Takahiro</a>
+                                          posted
+                                          <a href="#" class="link-text">Membangun Semangat Generasi Sandwich</a>
+                                          post in News &amp; Article sections.
+                                       </div>
+                                    </div>
+                                    <div class="log__item">
+                                       <div class="time">two months ago</div>
+                                       <div class="activity">
+                                          <a href="#" class="link-text">Takahiro</a>
+                                          posted
+                                          <a href="#" class="link-text">Membangun Semangat Generasi Sandwich</a>
+                                          post in News &amp; Article sections.
+                                       </div>
+                                    </div>
+                                    <div class="log__item">
+                                       <div class="time">two months ago</div>
+                                       <div class="activity">
+                                          <a href="#" class="link-text">Takahiro</a>
+                                          posted
+                                          <a href="#" class="link-text">Membangun Semangat Generasi Sandwich</a>
+                                          post in News &amp; Article sections.
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                     <div class="col">
+                        <div class="card card--green">
+                           <div class="assist">
+                              <div class="assist__content">
+                                 <h4 class="assist__title">Support</h4>
+                                 <p class="assist__desc">Mengalami kendala dalam pengoperasian dan membutuhkan pendampingan?</p>
+                                 <div class="assist__action">
+                                    <button type="button" class="btn btn--default btn--ripple">
+                                       <span class="icon"></span>
+                                       <span class="text">Chat with Us</span>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="assist__image">
+                                 <picture>
+                                    <source type="image/svg+xml" srcset="./images/img-left.svg" />
+                                    <img src="./images/img-left.png" alt="" />
+                                 </picture>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ./col -->
+                  </div>
+               </div>
+               <div class="content__footer">
+                  <p>version 2.0</p>
+                  <p>Design & Developed by Cyberprimatama</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="./scripts/index.js"></script>
+      <script src="./scripts/button.js"></script>
+   </body>
+</html>
